@@ -1,11 +1,12 @@
 import carrito from "../assets/carrito-compras.png"
-import Itemlistcontainer from "../itemlistcontainer/itemlistcontainer"
+import { Link,NavLink } from 'react-router-dom'
+
 
 const Carritocompras = () =>{
     return(
-        <div>
-    <img className="carrito-compras" src= {carrito} alt="carrito de compras"/>
-    0
+        <div className="Carrito">
+    <Link className="Carrito" to="/carrito"> 🛒</Link>
+    <span className="Carrito">0</span>
         </div>
     )
 }
